@@ -7,6 +7,15 @@ View images in Vim, because Vim is awesome!
 
 ![](https://github.com/ashisha/image.vim/blob/master/screenshot/image.vim.jpg)
 
+When I work in ssh it's great to view images with:
+
+```vim 
+:autocmd BufEnter *.png,*.jpg,*gif exec "! ~/.iterm2/imgcat ".expand("%") | :bw
+```
+
+but imgcat doesn't work with mosh :(
+
+image.vim does :)
 
 
 Features
